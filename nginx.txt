@@ -1,0 +1,491 @@
+# Redirect non-www to www
+
+# Create pretty URLs
+# End: Create pretty URLs
+
+# Specific redirections
+rewrite ^/webpages/ProductLine/ProductLineMakers/K&amp;N\.htm$ /webpages/ProductLine/ProductLineMakers/K-N.html? permanent;
+rewrite ^/webpages/Gallery/miscgallery/AE86\sRearTRDWing\.htm$ /webpages/Gallery/miscgallery/AE86RearTRDWing.html? permanent;
+rewrite ^/%22TARGET\=%22TOP$ /-TARGET--TOP.html? permanent;
+rewrite ^/2tg\s18rg\.htm$ /2tg18rg.html? permanent;
+rewrite ^/2tg\+18rg\.htm$ /2tg-18rg.html? permanent;
+rewrite ^/_vti_bin/shtml\.dll/Guestbook\+Overlay\.htm$ /_vti_bin/shtml.dll/Guestbook-Overlay.html? permanent;
+rewrite ^/Accessories\sMain\.htm$ /AccessoriesMain.html? permanent;
+rewrite ^/AE86\sLEVIN\sconvertion\.htm$ /AE86LEVINconvertion.html? permanent;
+rewrite ^/AE86\sRearTRDWing\.htm$ /AE86RearTRDWing.html? permanent;
+rewrite ^/AE86\+RearTRDWing\.htm$ /AE86-RearTRDWing.html? permanent;
+rewrite ^/AISIN\sCAMRY\sREAR\sSPOILER\.htm$ /AISINCAMRYREARSPOILER.html? permanent;
+rewrite ^/aisin\sCAMRY\srear\sspoiler\.htm$ /aisinCAMRYrearspoiler.html? permanent;
+rewrite ^/APEXi\sWEB\.htm$ /APEXiWEB.html? permanent;
+rewrite ^/APEXi\sWEB_files/editdata\.mso$ /APEXiWEB_files/editdata.html? permanent;
+rewrite ^/APEXi\sWEB_files/oledata\.mso$ /APEXiWEB_files/oledata.html? permanent;
+rewrite ^/APEXi\+WEB\.htm$ /APEXi-WEB.html? permanent;
+rewrite ^/Camry\sParts\sMain\.htm$ /CamryPartsMain.html? permanent;
+rewrite ^/Camry\+Parts\+Main\.htm$ /Camry-Parts-Main.html? permanent;
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D31006\%2DBM001\+\%2D\+HKS\+Hi\%2DPower\+Exhaust\+\%2D\+Lancer\+Evolution\+2003\%3E\+30th$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-31006-BM001---HKS-Hi-Power-Exhaust---Lancer-Evolution-2003--30th.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D32003\%2DKH010\+\%2D\+HKS\+Hi\%2DPower\+Exhaust\+\%2D\+S2000\+00\%2D03\+\%28Dual\+Exhaust\%29$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-32003-KH010---HKS-Hi-Power-Exhaust---S2000-00-03-(Dual-Exhaust).html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D3302\%2DEX039\+\%2D\+HKS\+Drager\+Exhaust\+\%2D\+Prelude\+97\%2D03$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-3302-EX039---HKS-Drager-Exhaust---Prelude-97-03.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D3302\%2DEX074\+\%2D\+HKS\+Drager\+Exhaust\+\%2D\+Integra\+GS\%2C\+LS\%2C\+RS\+94\%2D01$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-3302-EX074---HKS-Drager-Exhaust---Integra-GS--LS--RS-94-01.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D43001\%2DAM001\%2E\+\%2D\+HKS\+Twin\+Power\+DLI\+II\+\%2D\+Mitsu\%2E\+Lancer\+Evolution\+03$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-43001-AM001_---HKS-Twin-Power-DLI-II---Mitsu_-Lancer-Evolution-03.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2D4301\%2DSA005\+\%2D\+HKS\+Twin\+Power\+DLI\+\%2D\+Vehicle\+Specific$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-4301-SA005---HKS-Twin-Power-DLI---Vehicle-Specific.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKS\%2DLES\%2DZ01\+\%2D\+HKS\+Sport\+Exhaust\+\%2D\+RX\%2D7\+86\%2D91$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKS-LES-Z01---HKS-Sport-Exhaust---RX-7-86-91.html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HKSm\%2D4399\%2DST002\+\%2D\+HKS\+Twin\+Power\+Harness\+\%2D\+MR2\+90\%2D95\+\%283SGTE\%2F5SFE\%29$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HKSm-4399-ST002---HKS-Twin-Power-Harness---MR2-90-95-(3SGTE_5SFE).html? permanent; }
+if ($args ~* ^emailSubject=Product\+Inquiry\+\%3A\+HPK259\+\%2D\+Tokico\+HPK\+Suspension\+Kit\+\%2D\+Celica\+00\%2D04$){ rewrite ^/candypress/Scripts/contactUs\.asp$ /candypress/Scripts/contactUs_emailSubject-Product-Inquiry---HPK259---Tokico-HPK-Suspension-Kit---Celica-00-04.html? permanent; }
+if ($args ~* ^idProduct=145$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-145.html? permanent; }
+if ($args ~* ^idProduct=177$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-177.html? permanent; }
+if ($args ~* ^idProduct=191$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-191.html? permanent; }
+if ($args ~* ^idProduct=21$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-21.html? permanent; }
+if ($args ~* ^idProduct=43$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-43.html? permanent; }
+if ($args ~* ^idProduct=45$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-45.html? permanent; }
+if ($args ~* ^idProduct=51$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-51.html? permanent; }
+if ($args ~* ^idProduct=72$){ rewrite ^/candypress/Scripts/emailToFriend\.asp$ /candypress/Scripts/emailToFriend_idProduct-72.html? permanent; }
+if ($args ~* ^idCategory=1$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-1.html? permanent; }
+if ($args ~* ^idCategory=10$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-10.html? permanent; }
+if ($args ~* ^idCategory=1079$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-1079.html? permanent; }
+if ($args ~* ^idCategory=11$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-11.html? permanent; }
+if ($args ~* ^idCategory=13$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-13.html? permanent; }
+if ($args ~* ^idCategory=14$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-14.html? permanent; }
+if ($args ~* ^idCategory=15$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-15.html? permanent; }
+if ($args ~* ^idCategory=16$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-16.html? permanent; }
+if ($args ~* ^idCategory=17$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-17.html? permanent; }
+if ($args ~* ^idCategory=18$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-18.html? permanent; }
+if ($args ~* ^idCategory=19$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-19.html? permanent; }
+if ($args ~* ^idCategory=20$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-20.html? permanent; }
+if ($args ~* ^idCategory=21$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-21.html? permanent; }
+if ($args ~* ^idCategory=22$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-22.html? permanent; }
+if ($args ~* ^idCategory=23$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-23.html? permanent; }
+if ($args ~* ^idCategory=24$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-24.html? permanent; }
+if ($args ~* ^idCategory=25$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-25.html? permanent; }
+if ($args ~* ^idCategory=26$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-26.html? permanent; }
+if ($args ~* ^idCategory=27$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-27.html? permanent; }
+if ($args ~* ^idCategory=28$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-28.html? permanent; }
+if ($args ~* ^idCategory=3$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-3.html? permanent; }
+if ($args ~* ^idCategory=371$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-371.html? permanent; }
+if ($args ~* ^idCategory=372$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-372.html? permanent; }
+if ($args ~* ^idCategory=373$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-373.html? permanent; }
+if ($args ~* ^idCategory=374$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-374.html? permanent; }
+if ($args ~* ^idCategory=375$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-375.html? permanent; }
+if ($args ~* ^idCategory=376$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-376.html? permanent; }
+if ($args ~* ^idCategory=377$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-377.html? permanent; }
+if ($args ~* ^idCategory=379$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-379.html? permanent; }
+if ($args ~* ^idCategory=380$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-380.html? permanent; }
+if ($args ~* ^idCategory=381$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-381.html? permanent; }
+if ($args ~* ^idCategory=382$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-382.html? permanent; }
+if ($args ~* ^idCategory=383$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-383.html? permanent; }
+if ($args ~* ^idCategory=384$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-384.html? permanent; }
+if ($args ~* ^idCategory=385$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-385.html? permanent; }
+if ($args ~* ^idCategory=386$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-386.html? permanent; }
+if ($args ~* ^idCategory=392$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-392.html? permanent; }
+if ($args ~* ^idCategory=395$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-395.html? permanent; }
+if ($args ~* ^idCategory=396$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-396.html? permanent; }
+if ($args ~* ^idCategory=397$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-397.html? permanent; }
+if ($args ~* ^idCategory=398$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-398.html? permanent; }
+if ($args ~* ^idCategory=399$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-399.html? permanent; }
+if ($args ~* ^idCategory=400$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-400.html? permanent; }
+if ($args ~* ^idCategory=401$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-401.html? permanent; }
+if ($args ~* ^idCategory=402$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-402.html? permanent; }
+if ($args ~* ^idCategory=403$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-403.html? permanent; }
+if ($args ~* ^idCategory=404$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-404.html? permanent; }
+if ($args ~* ^idCategory=405$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-405.html? permanent; }
+if ($args ~* ^idCategory=406$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-406.html? permanent; }
+if ($args ~* ^idCategory=409$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-409.html? permanent; }
+if ($args ~* ^idCategory=410$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-410.html? permanent; }
+if ($args ~* ^idCategory=411$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-411.html? permanent; }
+if ($args ~* ^idCategory=650$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-650.html? permanent; }
+if ($args ~* ^idCategory=9$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_idCategory-9.html? permanent; }
+if ($args ~* ^special=Y$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_special-Y.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Exhaust\%2C\+Drager\%2C\+Acura\%2C\+Integra$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Exhaust--Drager--Acura--Integra.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Exhaust\%2C\+Drager\%2C\+Honda\%2C\+Prelude$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Exhaust--Drager--Honda--Prelude.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Exhaust\%2C\+Hi\%2DPower\%2C\+Honda\%2C\+S2000$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Exhaust--Hi-Power--Honda--S2000.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Exhaust\%2C\+Sport\%2C\+Mazda\%2C\+RX7$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Exhaust--Sport--Mazda--RX7.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Twinpower\%2C\+Ignition$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Twinpower--Ignition.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Twinpower\%2C\+Ignition\%2C\+Harness\%2C\+Toyota\%2C\+MR2\%2C\+3SGTE$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Twinpower--Ignition--Harness--Toyota--MR2--3SGTE.html? permanent; }
+if ($args ~* ^strSearch=HKS\%2C\+Twinpower\%2C\+Ignition\%2C\+Mitsubishi\%2C\+Lancer\+Evolution$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-HKS--Twinpower--Ignition--Mitsubishi--Lancer-Evolution.html? permanent; }
+if ($args ~* ^strSearch=Tokico\%2C\+HPK\%2C\+suspension\%2C\+Celica$){ rewrite ^/candypress/Scripts/prodList\.asp$ /candypress/Scripts/prodList_strSearch-Tokico--HPK--suspension--Celica.html? permanent; }
+if ($args ~* ^idProduct=145$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-145.html? permanent; }
+if ($args ~* ^idProduct=177$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-177.html? permanent; }
+if ($args ~* ^idProduct=191$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-191.html? permanent; }
+if ($args ~* ^idProduct=21$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-21.html? permanent; }
+if ($args ~* ^idProduct=232$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-232.html? permanent; }
+if ($args ~* ^idProduct=38$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-38.html? permanent; }
+if ($args ~* ^idProduct=42$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-42.html? permanent; }
+if ($args ~* ^idProduct=43$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-43.html? permanent; }
+if ($args ~* ^idProduct=45$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-45.html? permanent; }
+if ($args ~* ^idProduct=51$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-51.html? permanent; }
+if ($args ~* ^idProduct=81$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-81.html? permanent; }
+if ($args ~* ^idProduct=84$){ rewrite ^/candypress/Scripts/prodReview\.asp$ /candypress/Scripts/prodReview_idProduct-84.html? permanent; }
+if ($args ~* ^idproduct=130$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-130.html? permanent; }
+if ($args ~* ^idproduct=145$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-145.html? permanent; }
+if ($args ~* ^idproduct=146$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-146.html? permanent; }
+if ($args ~* ^idproduct=177$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-177.html? permanent; }
+if ($args ~* ^idproduct=191$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-191.html? permanent; }
+if ($args ~* ^idproduct=197$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-197.html? permanent; }
+if ($args ~* ^idproduct=201$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-201.html? permanent; }
+if ($args ~* ^idproduct=21$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-21.html? permanent; }
+if ($args ~* ^idProduct=211$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-211.html? permanent; }
+if ($args ~* ^idProduct=212$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-212.html? permanent; }
+if ($args ~* ^idProduct=213$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-213.html? permanent; }
+if ($args ~* ^idProduct=214$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-214.html? permanent; }
+if ($args ~* ^idProduct=215$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-215.html? permanent; }
+if ($args ~* ^idproduct=228$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-228.html? permanent; }
+if ($args ~* ^idProduct=228$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-228.html? permanent; }
+if ($args ~* ^idProduct=229$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-229.html? permanent; }
+if ($args ~* ^idProduct=230$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-230.html? permanent; }
+if ($args ~* ^idProduct=231$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-231.html? permanent; }
+if ($args ~* ^idProduct=232$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-232.html? permanent; }
+if ($args ~* ^idproduct=38$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-38.html? permanent; }
+if ($args ~* ^idProduct=38$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-38.html? permanent; }
+if ($args ~* ^idproduct=42$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-42.html? permanent; }
+if ($args ~* ^idProduct=42$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-42.html? permanent; }
+if ($args ~* ^idproduct=43$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-43.html? permanent; }
+if ($args ~* ^idproduct=45$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-45.html? permanent; }
+if ($args ~* ^idproduct=51$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-51.html? permanent; }
+if ($args ~* ^idProduct=51$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-51.html? permanent; }
+if ($args ~* ^idproduct=72$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-72.html? permanent; }
+if ($args ~* ^idproduct=80$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-80.html? permanent; }
+if ($args ~* ^idProduct=81$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idProduct-81.html? permanent; }
+if ($args ~* ^idproduct=84$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-84.html? permanent; }
+if ($args ~* ^idproduct=89$){ rewrite ^/candypress/Scripts/prodView\.asp$ /candypress/Scripts/prodView_idproduct-89.html? permanent; }
+if ($args ~* ^errMsg=Invalid\+Category\%2E$){ rewrite ^/candypress/Scripts/sysMsg\.asp$ /candypress/Scripts/sysMsg_errMsg-Invalid-Category_.html? permanent; }
+if ($args ~* ^errMsg=Your\+shopping\+cart\+is\+empty\%2E$){ rewrite ^/candypress/Scripts/sysMsg\.asp$ /candypress/Scripts/sysMsg_errMsg-Your-shopping-cart-is-empty_.html? permanent; }
+rewrite ^/catalog/Automobiles\sFor\sSale\.htm$ /catalog/AutomobilesForSale.html? permanent;
+rewrite ^/catalog/Catalogue\sMain\.htm$ /catalog/CatalogueMain.html? permanent;
+rewrite ^/catalog/GREDDY\sGUAGES\sSALE\.htm$ /catalog/GREDDYGUAGESSALE.html? permanent;
+rewrite ^/catalog/Koenig\sSeats\sSpecial\.htm$ /catalog/KoenigSeatsSpecial.html? permanent;
+rewrite ^/catalog/Mikuni\sCarburater\.htm$ /catalog/MikuniCarburater.html? permanent;
+rewrite ^/catalog/Mikuni\+Carburater\.htm$ /catalog/Mikuni-Carburater.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/20R_22R_22RTE\.htm$ /catalog/partsbyengine/20R_22R_22RTE.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/2JZGTE\.htm$ /catalog/partsbyengine/2JZGTE.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/2T\s3T\.htm$ /catalog/partsbyengine/2T3T.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/2TG\s18RG\.htm$ /catalog/partsbyengine/2TG18RG.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/2tg\s18rg\.htm$ /catalog/partsbyengine/2tg18rg.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/3SGE\.htm$ /catalog/partsbyengine/3SGE.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/3sge\.htm$ /catalog/partsbyengine/3sge.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/4AGE\.htm$ /catalog/partsbyengine/4AGE.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/5MGE_6MGE\.htm$ /catalog/partsbyengine/5MGE_6MGE.html? permanent;
+rewrite ^/catalog/parts\sby\sengine/7MGE\.htm$ /catalog/partsbyengine/7MGE.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Camry\s87-91\sParts\.htm$ /catalog/partsbymodel/Camry87-91Parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Camry\s92-96\sParts\.htm$ /catalog/partsbymodel/Camry92-96Parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Camry\s97-2000\sParts\.htm$ /catalog/partsbymodel/Camry97-2000Parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Camry\sParts\sMain\.htm$ /catalog/partsbymodel/CamryPartsMain.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_2000_parts\.htm$ /catalog/partsbymodel/celica_2000_parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_71\s85\sparts\.htm$ /catalog/partsbymodel/celica_7185parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_86\s89_parts\.htm$ /catalog/partsbymodel/celica_8689_parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_90\s93_parts\.htm$ /catalog/partsbymodel/celica_9093_parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_94\s99_parts\.htm$ /catalog/partsbymodel/celica_9499_parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_all_trac_parts\.htm$ /catalog/partsbymodel/celica_all_trac_parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/celica_parts_list_main\.htm$ /catalog/partsbymodel/celica_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla\s71-83\sparts\.htm$ /catalog/partsbymodel/Corolla71-83parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla\s88-91\sparts\.htm$ /catalog/partsbymodel/Corolla88-91parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla\s92-97\sparts\.htm$ /catalog/partsbymodel/Corolla92-97parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/corolla\s92-97\sparts\.htm$ /catalog/partsbymodel/corolla92-97parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla\s98-00\sparts\.htm$ /catalog/partsbymodel/Corolla98-00parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla\sRWD\s84-87\sparts\.htm$ /catalog/partsbymodel/CorollaRWD84-87parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Corolla_parts_list_main\.htm$ /catalog/partsbymodel/Corolla_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Echo\sParts\sMain\.htm$ /catalog/partsbymodel/EchoPartsMain.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Lexus\sGS\sparts\.htm$ /catalog/partsbymodel/LexusGSparts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/lexus\sgs\sparts\.htm$ /catalog/partsbymodel/lexusgsparts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Lexus\sIS\sParts\.htm$ /catalog/partsbymodel/LexusISParts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/MR2\s85-89\sSC\.htm$ /catalog/partsbymodel/MR285-89SC.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/MR2\s85-89\.htm$ /catalog/partsbymodel/MR285-89.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/MR2\s90-99\sTurbo\.htm$ /catalog/partsbymodel/MR290-99Turbo.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/MR2\s90-99\.htm$ /catalog/partsbymodel/MR290-99.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/MR2_parts_list_main\.htm$ /catalog/partsbymodel/MR2_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/RAV4\sparts\.htm$ /catalog/partsbymodel/RAV4parts.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/supra\s78-81\.htm$ /catalog/partsbymodel/supra78-81.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/supra\s82-86\.htm$ /catalog/partsbymodel/supra82-86.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/supra\s865\s92\.htm$ /catalog/partsbymodel/supra86592.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/supra\s93-99\.htm$ /catalog/partsbymodel/supra93-99.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/supra_parts_list_main\.htm$ /catalog/partsbymodel/supra_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/SUV_parts_list_main\.htm$ /catalog/partsbymodel/SUV_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\sby\smodel/Tercel\sPaseo_parts_list_main\.htm$ /catalog/partsbymodel/TercelPaseo_parts_list_main.html? permanent;
+rewrite ^/catalog/parts\+by\+engine/20R_22R_22RTE\.htm$ /catalog/parts-by-engine/20R_22R_22RTE.html? permanent;
+rewrite ^/catalog/parts\+by\+engine/4AGE\.htm$ /catalog/parts-by-engine/4AGE.html? permanent;
+rewrite ^/catalog/parts\+by\+model/celica_71\+85\+parts\.htm$ /catalog/parts-by-model/celica_71-85-parts.html? permanent;
+rewrite ^/catalog/parts\+by\+model/Corolla\+71-83\+parts\.htm$ /catalog/parts-by-model/Corolla-71-83-parts.html? permanent;
+rewrite ^/catalog/parts\+by\+model/Corolla\+98-00\+parts\.htm$ /catalog/parts-by-model/Corolla-98-00-parts.html? permanent;
+rewrite ^/catalog/parts\+by\+model/Corolla\+RWD\+84-87\+parts\.htm$ /catalog/parts-by-model/Corolla-RWD-84-87-parts.html? permanent;
+rewrite ^/catalog/parts\+by\+model/Lexus\+GS\+parts\.htm$ /catalog/parts-by-model/Lexus-GS-parts.html? permanent;
+rewrite ^/catalog/parts\+by\+model/Lexus\+IS\+Parts\.htm$ /catalog/parts-by-model/Lexus-IS-Parts.html? permanent;
+rewrite ^/catalog/PET\s3S-GTE\sConversion\.htm$ /catalog/PET3S-GTEConversion.html? permanent;
+rewrite ^/catalog/Toyota\sOEM\sParts\sand\sAccessories\.htm$ /catalog/ToyotaOEMPartsandAccessories.html? permanent;
+rewrite ^/catalog/Used\sToyota\sEngines\.htm$ /catalog/UsedToyotaEngines.html? permanent;
+rewrite ^/catalog/used\stoyota\sengines\.htm$ /catalog/usedtoyotaengines.html? permanent;
+rewrite ^/catalog/Used\+Toyota\+Engines\.htm$ /catalog/Used-Toyota-Engines.html? permanent;
+rewrite ^/Celica\sor\sMR2\sSpyder\.htm$ /CelicaorMR2Spyder.html? permanent;
+rewrite ^/Celica\+or\+MR2\+Spyder\.htm$ /Celica-or-MR2-Spyder.html? permanent;
+rewrite ^/Clear\sLens\sConversions\.htm$ /ClearLensConversions.html? permanent;
+rewrite ^/Clear\+Lens\+Conversions\.htm$ /Clear-Lens-Conversions.html? permanent;
+rewrite ^/Complete\sLamp\sList\.htm$ /CompleteLampList.html? permanent;
+rewrite ^/Complete\sLamp\sList_files/editdata\.mso$ /CompleteLampList_files/editdata.html? permanent;
+rewrite ^/dash\spanel\sweb\.htm$ /dashpanelweb.html? permanent;
+rewrite ^/dash\spanel\sweb_files/editdata\.mso$ /dashpanelweb_files/editdata.html? permanent;
+rewrite ^/dash\spanel\sweb_files/oledata\.mso$ /dashpanelweb_files/oledata.html? permanent;
+rewrite ^/dash\+panel\+web\.htm$ /dash-panel-web.html? permanent;
+rewrite ^/DCOE\sSeries\sCarburetors\.htm$ /DCOESeriesCarburetors.html? permanent;
+rewrite ^/DCOE\sSeries\sCarburetors_files/editdata\.mso$ /DCOESeriesCarburetors_files/editdata.html? permanent;
+rewrite ^/DENSO\sWEB\slist\.htm$ /DENSOWEBlist.html? permanent;
+rewrite ^/DENSO\sWEB\slist_files/editdata\.mso$ /DENSOWEBlist_files/editdata.html? permanent;
+rewrite ^/DENSO\sWEB\slist_files/oledata\.mso$ /DENSOWEBlist_files/oledata.html? permanent;
+rewrite ^/DENSO\sWEB\.htm$ /DENSOWEB.html? permanent;
+rewrite ^/DENSO\sWEB_files/editdata\.mso$ /DENSOWEB_files/editdata.html? permanent;
+rewrite ^/DENSO\sWEB_files/oledata\.mso$ /DENSOWEB_files/oledata.html? permanent;
+rewrite ^/DENSO\+WEB\.htm$ /DENSO-WEB.html? permanent;
+rewrite ^/EIBACH\sWEB\.htm$ /EIBACHWEB.html? permanent;
+rewrite ^/EIBACH\sWEB_files/editdata\.mso$ /EIBACHWEB_files/editdata.html? permanent;
+rewrite ^/EIBACH\sWEB_files/oledata\.mso$ /EIBACHWEB_files/oledata.html? permanent;
+rewrite ^/ENGINE\sEVOLUTION\sOF\sTHE\s3SGE\.htm$ /ENGINEEVOLUTIONOFTHE3SGE.html? permanent;
+rewrite ^/ENGINE\sLIST\sMARCH\s2002\.htm$ /ENGINELISTMARCH2002.html? permanent;
+rewrite ^/ENGINE\sLIST\sMARCH\s2002_files/editdata\.mso$ /ENGINELISTMARCH2002_files/editdata.html? permanent;
+rewrite ^/ENGINE\sLIST\sMARCH\s2002_files/oledata\.mso$ /ENGINELISTMARCH2002_files/oledata.html? permanent;
+rewrite ^/ENGINE\+EVOLUTION\+OF\+THE\+3SGE\.htm$ /ENGINE-EVOLUTION-OF-THE-3SGE.html? permanent;
+rewrite ^/ENGINE\+LIST\+MARCH\+2002\.htm$ /ENGINE-LIST-MARCH-2002.html? permanent;
+rewrite ^/FE\sEngines\.htm$ /FEEngines.html? permanent;
+rewrite ^/FE\+Engines\.htm$ /FE-Engines.html? permanent;
+rewrite ^/Frame\sOverlay\.htm$ /FrameOverlay.html? permanent;
+rewrite ^/Frame\+Overlay\.htm$ /Frame-Overlay.html? permanent;
+rewrite ^/HKS\sWEBnew\.htm$ /HKSWEBnew.html? permanent;
+rewrite ^/HKS\+WEBnew\.htm$ /HKS-WEBnew.html? permanent;
+rewrite ^/how\sto\schoose\sturbochargers\.htm$ /howtochooseturbochargers.html? permanent;
+if ($args ~* ^\%22$){ rewrite ^/how\sto\schoose\sturbochargers\.htm$ /howtochooseturbochargers_-.html? permanent; }
+rewrite ^/how\+to\+choose\+turbochargers\.htm$ /how-to-choose-turbochargers.html? permanent;
+if ($args ~* ^\%22$){ rewrite ^/how\+to\+choose\+turbochargers\.htm$ /how-to-choose-turbochargers_-.html? permanent; }
+if($is_args = ''){ rewrite ^/index\.htm$ /index_htm.html? permanent; }
+rewrite ^/K&N\.htm$ /K-N.html? permanent;
+rewrite ^/k&ngallery\.htm$ /k-ngallery.html? permanent;
+rewrite ^/KAAZ\sLimited\sSlip\sDifferentials\.htm$ /KAAZLimitedSlipDifferentials.html? permanent;
+rewrite ^/L\sTUNED\sGS\.htm$ /LTUNEDGS.html? permanent;
+rewrite ^/MIKUNI\sCARBURATORS\sparts\slist\.htm$ /MIKUNICARBURATORSpartslist.html? permanent;
+rewrite ^/MIKUNI\+CARBURATORS\+parts\+list\.htm$ /MIKUNI-CARBURATORS-parts-list.html? permanent;
+rewrite ^/Misc/Online\sSales\sPolicy\.htm$ /Misc/OnlineSalesPolicy.html? permanent;
+rewrite ^/Misc/purchase\sprograms\.htm$ /Misc/purchaseprograms.html? permanent;
+rewrite ^/Misc/Toysport\sorder_form\.htm$ /Misc/Toysportorder_form.html? permanent;
+rewrite ^/MODEL\sDESIGNATION\.htm$ /MODELDESIGNATION.html? permanent;
+rewrite ^/MODEL\sDESIGNATION_files/editdata\.mso$ /MODELDESIGNATION_files/editdata.html? permanent;
+rewrite ^/MODEL\sDESIGNATION_files/oledata\.mso$ /MODELDESIGNATION_files/oledata.html? permanent;
+rewrite ^/MODEL\+DESIGNATION\.htm$ /MODEL-DESIGNATION.html? permanent;
+rewrite ^/MR2\sSpyder1\.htm$ /MR2Spyder1.html? permanent;
+rewrite ^/MR2\+Spyder1\.htm$ /MR2-Spyder1.html? permanent;
+rewrite ^/new\sarticles/Fw_\sCorolla\sAE86\sHI\.htm$ /newarticles/Fw_CorollaAE86HI.html? permanent;
+rewrite ^/new\sarticles/Fw_\sLexus\sGS300\s2JZGTE\s\sJZS147\.htm$ /newarticles/Fw_LexusGS3002JZGTEJZS147.html? permanent;
+rewrite ^/new\sarticles/Fw_\sLEXUS\sGS300\sVERTEX\sHKS\sTWIN\sTURBO\.htm$ /newarticles/Fw_LEXUSGS300VERTEXHKSTWINTURBO.html? permanent;
+rewrite ^/NEW\sARTICLES2/cataloggsL\sTUNED\sGS_files/editdata\.mso$ /NEWARTICLES2/cataloggsLTUNEDGS_files/editdata.html? permanent;
+rewrite ^/NEW\sARTICLES2/cataloggsL\sTUNED\sGS_files/oledata\.mso$ /NEWARTICLES2/cataloggsLTUNEDGS_files/oledata.html? permanent;
+rewrite ^/New\sProducts/Atlantic\.htm$ /NewProducts/Atlantic.html? permanent;
+rewrite ^/New\sProducts/Celica\sor\sMR2\sSpyder\.htm$ /NewProducts/CelicaorMR2Spyder.html? permanent;
+rewrite ^/New\sProducts/Clear\sLens\sConversions\.htm$ /NewProducts/ClearLensConversions.html? permanent;
+rewrite ^/New\sProducts/KAAZ\sLimited\sSlip\sDifferentials\.htm$ /NewProducts/KAAZLimitedSlipDifferentials.html? permanent;
+rewrite ^/New\sProducts/MR2\sSpyder\.htm$ /NewProducts/MR2Spyder.html? permanent;
+rewrite ^/New\sProducts/New\sProducts\sMain\.htm$ /NewProducts/NewProductsMain.html? permanent;
+rewrite ^/New\sProducts/OS\sGIKEN\s2\splates\.htm$ /NewProducts/OSGIKEN2plates.html? permanent;
+rewrite ^/New\sProducts/Silicone\sHoses\.htm$ /NewProducts/SiliconeHoses.html? permanent;
+rewrite ^/New\sProducts/Toysport\sPET\sCamshafts\.htm$ /NewProducts/ToysportPETCamshafts.html? permanent;
+rewrite ^/New\sProducts/Toysport\sPET\sECU\.htm$ /NewProducts/ToysportPETECU.html? permanent;
+rewrite ^/New\sProducts/Toysport\sPET\sPulleys\sand\sFlywheels\.htm$ /NewProducts/ToysportPETPulleysandFlywheels.html? permanent;
+rewrite ^/New\sProducts/TRD\sClutches\.htm$ /NewProducts/TRDClutches.html? permanent;
+rewrite ^/New\sProducts/TRD\sSPECIALS\.htm$ /NewProducts/TRDSPECIALS.html? permanent;
+rewrite ^/New\sProducts/TRD\sSuperchargers\.htm$ /NewProducts/TRDSuperchargers.html? permanent;
+rewrite ^/New\sProducts/Vibrasonic\.htm$ /NewProducts/Vibrasonic.html? permanent;
+rewrite ^/new\+articles/Fw_\+Lexus\+GS300\+2JZGTE\+\+JZS147\.htm$ /new-articles/Fw_-Lexus-GS300-2JZGTE--JZS147.html? permanent;
+rewrite ^/new\+articles/Fw_\+LEXUS\+GS300\+VERTEX\+HKS\+TWIN\+TURBO\.htm$ /new-articles/Fw_-LEXUS-GS300-VERTEX-HKS-TWIN-TURBO.html? permanent;
+rewrite ^/New\+Products/Atlantic\.htm$ /New-Products/Atlantic.html? permanent;
+rewrite ^/NGK\sWEB\.htm$ /NGKWEB.html? permanent;
+rewrite ^/NGK\sWEB_files/20WEB\.htm$ /NGKWEB_files/20WEB.html? permanent;
+rewrite ^/NGK\sWEB_files/editdata\.mso$ /NGKWEB_files/editdata.html? permanent;
+rewrite ^/NGK\sWEB_files/oledata\.mso$ /NGKWEB_files/oledata.html? permanent;
+rewrite ^/NGK\sWEB_files/productline\.htm$ /NGKWEB_files/productline.html? permanent;
+rewrite ^/NGK\sWEB_files/sheet001\.htm$ /NGKWEB_files/sheet001.html? permanent;
+rewrite ^/NGK\sWEB_files/sheet002\.htm$ /NGKWEB_files/sheet002.html? permanent;
+rewrite ^/NGK\sWEB_files/sheet003\.htm$ /NGKWEB_files/sheet003.html? permanent;
+rewrite ^/NGK\sWEB_files/tabstrip\.htm$ /NGKWEB_files/tabstrip.html? permanent;
+rewrite ^/NGK\+WEB\.htm$ /NGK-WEB.html? permanent;
+rewrite ^/NOLOGY\sWEB\.htm$ /NOLOGYWEB.html? permanent;
+rewrite ^/noLOGY\sWEB\.htm$ /noLOGYWEB.html? permanent;
+rewrite ^/NOLOGY\sWEB_files/editdata\.mso$ /NOLOGYWEB_files/editdata.html? permanent;
+rewrite ^/NOLOGY\sWEB_files/oledata\.mso$ /NOLOGYWEB_files/oledata.html? permanent;
+rewrite ^/NOLOGY\+WEB\.htm$ /NOLOGY-WEB.html? permanent;
+rewrite ^/PET\s3s_GTE\sConversion\.htm$ /PET3s_GTEConversion.html? permanent;
+rewrite ^/PET\+3s_GTE\+Conversion\.htm$ /PET-3s_GTE-Conversion.html? permanent;
+rewrite ^/PIAA\sTOYOTA\.htm$ /PIAATOYOTA.html? permanent;
+rewrite ^/PIAA\sTOYOTA_files/editdata\.mso$ /PIAATOYOTA_files/editdata.html? permanent;
+rewrite ^/PIAA\sTOYOTA_files/oledata\.mso$ /PIAATOYOTA_files/oledata.html? permanent;
+rewrite ^/PORTERFEILD\sWEB_files/editdata\.mso$ /PORTERFEILDWEB_files/editdata.html? permanent;
+rewrite ^/PORTERFEILD\sWEB_files/oledata\.mso$ /PORTERFEILDWEB_files/oledata.html? permanent;
+rewrite ^/porterfield\sTOYOTA\.htm$ /porterfieldTOYOTA.html? permanent;
+rewrite ^/porterfield\sTOYOTA_files/editdata\.mso$ /porterfieldTOYOTA_files/editdata.html? permanent;
+rewrite ^/porterfield\sTOYOTA_files/oledata\.mso$ /porterfieldTOYOTA_files/oledata.html? permanent;
+rewrite ^/porterfield\+TOYOTA\.htm$ /porterfield-TOYOTA.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMain\.htm$ /ProductLine/ProductLineMain.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/ADDCO\.htm$ /ProductLine/ProductLineMakers/ADDCO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/AEM\.htm$ /ProductLine/ProductLineMakers/AEM.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/ARIAS\.htm$ /ProductLine/ProductLineMakers/ARIAS.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/ARP\.htm$ /ProductLine/ProductLineMakers/ARP.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/AUTOMETER\.htm$ /ProductLine/ProductLineMakers/AUTOMETER.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/AutoPower\.htm$ /ProductLine/ProductLineMakers/AutoPower.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/BREMBO\.htm$ /ProductLine/ProductLineMakers/BREMBO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/CARILLO\.htm$ /ProductLine/ProductLineMakers/CARILLO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Centerforce\.htm$ /ProductLine/ProductLineMakers/Centerforce.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/CIBIE\.htm$ /ProductLine/ProductLineMakers/CIBIE.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/CLUTCH\sMASTER\.htm$ /ProductLine/ProductLineMakers/CLUTCHMASTER.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Crower\.htm$ /ProductLine/ProductLineMakers/Crower.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/CUSCO\.htm$ /ProductLine/ProductLineMakers/CUSCO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Doug\sThorley\.htm$ /ProductLine/ProductLineMakers/DougThorley.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/EARLS\.htm$ /ProductLine/ProductLineMakers/EARLS.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/EBC\.htm$ /ProductLine/ProductLineMakers/EBC.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/EIBACH\.htm$ /ProductLine/ProductLineMakers/EIBACH.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Electromotive\.htm$ /ProductLine/ProductLineMakers/Electromotive.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Energy\sSuspension\.htm$ /ProductLine/ProductLineMakers/EnergySuspension.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Federal\sMogul\.htm$ /ProductLine/ProductLineMakers/FederalMogul.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Greddy\sTRUST\.htm$ /ProductLine/ProductLineMakers/GreddyTRUST.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/GTECH\.htm$ /ProductLine/ProductLineMakers/GTECH.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/HELLA\.htm$ /ProductLine/ProductLineMakers/HELLA.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/HKS\.htm$ /ProductLine/ProductLineMakers/HKS.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/ISKY\.htm$ /ProductLine/ProductLineMakers/ISKY.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/K&N\.htm$ /ProductLine/ProductLineMakers/K-N.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/KAAZ\.htm$ /ProductLine/ProductLineMakers/KAAZ.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Kaminari\sAero\.htm$ /ProductLine/ProductLineMakers/KaminariAero.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Koni\.htm$ /ProductLine/ProductLineMakers/Koni.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/KYB\.htm$ /ProductLine/ProductLineMakers/KYB.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Momo\.htm$ /ProductLine/ProductLineMakers/Momo.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Moroso\.htm$ /ProductLine/ProductLineMakers/Moroso.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/MSD\.htm$ /ProductLine/ProductLineMakers/MSD.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/NEO\sLubricants\.htm$ /ProductLine/ProductLineMakers/NEOLubricants.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/NOS\.htm$ /ProductLine/ProductLineMakers/NOS.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/RECARO\.htm$ /ProductLine/ProductLineMakers/RECARO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/SABELT\sTRW\.htm$ /ProductLine/ProductLineMakers/SABELTTRW.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/SCHROTH\.htm$ /ProductLine/ProductLineMakers/SCHROTH.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Simpson\.htm$ /ProductLine/ProductLineMakers/Simpson.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/SPARCO\.htm$ /ProductLine/ProductLineMakers/SPARCO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/STR\.htm$ /ProductLine/ProductLineMakers/STR.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/SWAY\sAWAY\.htm$ /ProductLine/ProductLineMakers/SWAYAWAY.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/Toda\.htm$ /ProductLine/ProductLineMakers/Toda.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/TOKICO\.htm$ /ProductLine/ProductLineMakers/TOKICO.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/TRD\sUSA\.htm$ /ProductLine/ProductLineMakers/TRDUSA.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/TURBONETICS\.htm$ /ProductLine/ProductLineMakers/TURBONETICS.html? permanent;
+rewrite ^/Product\sLine/Product\sLine\sMakers/VDO\.htm$ /ProductLine/ProductLineMakers/VDO.html? permanent;
+rewrite ^/Product\+Line/Product\+Line\+Main\.htm$ /Product-Line/Product-Line-Main.html? permanent;
+rewrite ^/RACE\sENGINES\.htm$ /RACEENGINES.html? permanent;
+rewrite ^/RACE\sENGINES_files/20ENGINES\.htm$ /RACEENGINES_files/20ENGINES.html? permanent;
+rewrite ^/RACE\sENGINES_files/editdata\.mso$ /RACEENGINES_files/editdata.html? permanent;
+rewrite ^/RACE\sENGINES_files/oledata\.mso$ /RACEENGINES_files/oledata.html? permanent;
+rewrite ^/RACE\sENGINES_files/sheet001\.htm$ /RACEENGINES_files/sheet001.html? permanent;
+rewrite ^/RACE\sENGINES_files/sheet002\.htm$ /RACEENGINES_files/sheet002.html? permanent;
+rewrite ^/RACE\sENGINES_files/sheet003\.htm$ /RACEENGINES_files/sheet003.html? permanent;
+rewrite ^/RACE\sENGINES_files/tabstrip\.htm$ /RACEENGINES_files/tabstrip.html? permanent;
+rewrite ^/RACE\sENGINES_files/Techinfo\.htm$ /RACEENGINES_files/Techinfo.html? permanent;
+rewrite ^/Shock\sAbsorbers\.htm$ /ShockAbsorbers.html? permanent;
+rewrite ^/Shock\+Absorbers\.htm$ /Shock-Absorbers.html? permanent;
+rewrite ^/silicone\shoses\.htm$ /siliconehoses.html? permanent;
+rewrite ^/silicone\+hoses\.htm$ /silicone-hoses.html? permanent;
+rewrite ^/Technical\sInfo\sMain\.htm$ /TechnicalInfoMain.html? permanent;
+rewrite ^/Technical\sInformation/22r_tech_notes\.htm$ /TechnicalInformation/22r_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/22r_tech_notes\.htm$ /technicalinformation/22r_tech_notes.html? permanent;
+rewrite ^/Technical\sInformation/2tg_18rg_3tg_tech_notes\.htm$ /TechnicalInformation/2tg_18rg_3tg_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/2tg_18rg_3tg_tech_notes\.htm$ /technicalinformation/2tg_18rg_3tg_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/2ZZ-GE_tech_notes\.htm$ /technicalinformation/2ZZ-GE_tech_notes.html? permanent;
+rewrite ^/Technical\sInformation/3sgt_tech_notes\.htm$ /TechnicalInformation/3sgt_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/3sgt_tech_notes\.htm$ /technicalinformation/3sgt_tech_notes.html? permanent;
+rewrite ^/Technical\sInformation/4ag_tech_notes\.htm$ /TechnicalInformation/4ag_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/4ag_tech_notes\.htm$ /technicalinformation/4ag_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/4ag_tech_notes\.htm\)$ /technicalinformation/4ag_tech_notes.htm).html? permanent;
+rewrite ^/Technical\sInformation/5m_6m_tech_notes\.htm$ /TechnicalInformation/5m_6m_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/5m_6m_tech_notes\.htm$ /technicalinformation/5m_6m_tech_notes.html? permanent;
+rewrite ^/Technical\sInformation/7m_tech_notes\.htm$ /TechnicalInformation/7m_tech_notes.html? permanent;
+rewrite ^/technical\sinformation/7m_tech_notes\.htm$ /technicalinformation/7m_tech_notes.html? permanent;
+rewrite ^/Technical\sInformation/FE\sEngines\.htm$ /TechnicalInformation/FEEngines.html? permanent;
+rewrite ^/technical\sinformation/FE\sEngines\.htm$ /technicalinformation/FEEngines.html? permanent;
+rewrite ^/Technical\sInformation/Shock\sAbsorbers\.htm$ /TechnicalInformation/ShockAbsorbers.html? permanent;
+rewrite ^/technical\sinformation/shock\sabsorbers\.htm$ /technicalinformation/shockabsorbers.html? permanent;
+rewrite ^/Technical\sInformation/spec_sheet\.htm$ /TechnicalInformation/spec_sheet.html? permanent;
+rewrite ^/technical\sinformation/spec_sheet\.htm$ /technicalinformation/spec_sheet.html? permanent;
+rewrite ^/Technical\sInformation/Technical\sInfo\sMain\.htm$ /TechnicalInformation/TechnicalInfoMain.html? permanent;
+rewrite ^/technical\sinformation/Technical\sInfo\sMain\.htm$ /technicalinformation/TechnicalInfoMain.html? permanent;
+rewrite ^/Technical\sInformation/Toyota\sDifferentials\sIdentifications\.htm$ /TechnicalInformation/ToyotaDifferentialsIdentifications.html? permanent;
+rewrite ^/technical\sinformation/Toyota\sDifferentials\sIdentifications\.htm$ /technicalinformation/ToyotaDifferentialsIdentifications.html? permanent;
+rewrite ^/technical\sinformation/toyota\sdifferentials\sidentifications\.htm$ /technicalinformation/toyotadifferentialsidentifications.html? permanent;
+rewrite ^/Technical\sInformation/Toyota\sRacing\sEngines\.htm$ /TechnicalInformation/ToyotaRacingEngines.html? permanent;
+rewrite ^/technical\sinformation/Toyota\sRacing\sEngines\.htm$ /technicalinformation/ToyotaRacingEngines.html? permanent;
+rewrite ^/Technical\sInformation/toyota_twin_cam_article\.htm$ /TechnicalInformation/toyota_twin_cam_article.html? permanent;
+rewrite ^/technical\sinformation/toyota_twin_cam_article\.htm$ /technicalinformation/toyota_twin_cam_article.html? permanent;
+rewrite ^/Technical\sInformation/toysport\spet\sparts\.htm$ /TechnicalInformation/toysportpetparts.html? permanent;
+rewrite ^/Technical\sInformation/Transmissions\.htm$ /TechnicalInformation/Transmissions.html? permanent;
+rewrite ^/technical\sinformation/Transmissions\.htm$ /technicalinformation/Transmissions.html? permanent;
+rewrite ^/Technical\sInformation/turbochargers\.htm$ /TechnicalInformation/turbochargers.html? permanent;
+rewrite ^/technical\sinformation/turbochargers\.htm$ /technicalinformation/turbochargers.html? permanent;
+rewrite ^/Technical\+Info\+Main\.htm$ /Technical-Info-Main.html? permanent;
+rewrite ^/Technical\+Information/22r_tech_notes\.htm$ /Technical-Information/22r_tech_notes.html? permanent;
+rewrite ^/Technical\+Information/2tg_18rg_3tg_tech_notes\.htm$ /Technical-Information/2tg_18rg_3tg_tech_notes.html? permanent;
+rewrite ^/Technical\+Information/3sgt_tech_notes\.htm$ /Technical-Information/3sgt_tech_notes.html? permanent;
+rewrite ^/Technical\+Information/4ag_tech_notes\.htm$ /Technical-Information/4ag_tech_notes.html? permanent;
+rewrite ^/Technical\+Information/7m_tech_notes\.htm$ /Technical-Information/7m_tech_notes.html? permanent;
+rewrite ^/Technical\+Information/Technical\+Info\+Main\.htm$ /Technical-Information/Technical-Info-Main.html? permanent;
+rewrite ^/technotesLexus\sTuning\.htm$ /technotesLexusTuning.html? permanent;
+rewrite ^/TO\sPOST\sWEB\sMAR\s26/HKS\sWEB_files/editdata\.mso$ /TOPOSTWEBMAR26/HKSWEB_files/editdata.html? permanent;
+rewrite ^/TO\sPOST\sWEB\sMAR\s26/HKS\sWEB_files/oledata\.mso$ /TOPOSTWEBMAR26/HKSWEB_files/oledata.html? permanent;
+rewrite ^/TOKICO\sWEB\.htm$ /TOKICOWEB.html? permanent;
+rewrite ^/TOKICO\sWEB_files/20WEB\.htm$ /TOKICOWEB_files/20WEB.html? permanent;
+rewrite ^/TOKICO\sWEB_files/editdata\.mso$ /TOKICOWEB_files/editdata.html? permanent;
+rewrite ^/TOKICO\sWEB_files/oledata\.mso$ /TOKICOWEB_files/oledata.html? permanent;
+rewrite ^/TOKICO\sWEB_files/sheet001\.htm$ /TOKICOWEB_files/sheet001.html? permanent;
+rewrite ^/TOKICO\sWEB_files/sheet002\.htm$ /TOKICOWEB_files/sheet002.html? permanent;
+rewrite ^/TOKICO\sWEB_files/tabstrip\.htm$ /TOKICOWEB_files/tabstrip.html? permanent;
+rewrite ^/toy\seng\ssum\.htm$ /toyengsum.html? permanent;
+rewrite ^/toy\seng\ssum_files/20sum\.htm$ /toyengsum_files/20sum.html? permanent;
+rewrite ^/toy\seng\ssum_files/editdata\.mso$ /toyengsum_files/editdata.html? permanent;
+rewrite ^/toy\seng\ssum_files/oledata\.mso$ /toyengsum_files/oledata.html? permanent;
+rewrite ^/toy\seng\ssum_files/sheet001\.htm$ /toyengsum_files/sheet001.html? permanent;
+rewrite ^/toy\seng\ssum_files/sheet002\.htm$ /toyengsum_files/sheet002.html? permanent;
+rewrite ^/toy\seng\ssum_files/sheet003\.htm$ /toyengsum_files/sheet003.html? permanent;
+rewrite ^/toy\seng\ssum_files/tabstrip\.htm$ /toyengsum_files/tabstrip.html? permanent;
+rewrite ^/toy\seng\ssum_files/Techinfo\.htm$ /toyengsum_files/Techinfo.html? permanent;
+rewrite ^/TOY\sLEX\sORDER\sFORM\snew\.htm$ /TOYLEXORDERFORMnew.html? permanent;
+rewrite ^/TOY\sLEX\sORDER\sFORM\snew_files/editdata\.mso$ /TOYLEXORDERFORMnew_files/editdata.html? permanent;
+rewrite ^/toy\+eng\+sum\.htm$ /toy-eng-sum.html? permanent;
+rewrite ^/TOY\+LEX\+ORDER\+FORM\+new\.htm$ /TOY-LEX-ORDER-FORM-new.html? permanent;
+rewrite ^/toyota\sdifferentials\sindentifications\.htm$ /toyotadifferentialsindentifications.html? permanent;
+rewrite ^/TOYOTA\sECU\sWEB\.htm$ /TOYOTAECUWEB.html? permanent;
+rewrite ^/Toyota\sMarine\sSports\.htm$ /ToyotaMarineSports.html? permanent;
+rewrite ^/Toyota\sOEM\sParts\sand\sAccessories\.htm$ /ToyotaOEMPartsandAccessories.html? permanent;
+rewrite ^/toyota\sracing\sengines\.htm$ /toyotaracingengines.html? permanent;
+rewrite ^/toyota\+differentials\+indentifications\.htm$ /toyota-differentials-indentifications.html? permanent;
+rewrite ^/Toyota\+OEM\+Parts\+and\+Accessories\.htm$ /Toyota-OEM-Parts-and-Accessories.html? permanent;
+rewrite ^/toyota\+racing\+engines\.htm$ /toyota-racing-engines.html? permanent;
+rewrite ^/TOYSPORT\sORDER\sFORM\snew\.htm$ /TOYSPORTORDERFORMnew.html? permanent;
+rewrite ^/TOYSPORT\sORDER\sFORM\snew_files/editdata\.mso$ /TOYSPORTORDERFORMnew_files/editdata.html? permanent;
+rewrite ^/TOYSPORT\+ORDER\+FORM\+new\.htm$ /TOYSPORT-ORDER-FORM-new.html? permanent;
+rewrite ^/TRD\sN2\s4AGE\.htm$ /TRDN24AGE.html? permanent;
+rewrite ^/TRD\sSUperchargers\.htm$ /TRDSUperchargers.html? permanent;
+rewrite ^/TRD\+N2\+4AGE\.htm$ /TRD-N2-4AGE.html? permanent;
+rewrite ^/TRD\+SUperchargers\.htm$ /TRD-SUperchargers.html? permanent;
+rewrite ^/Web\sChanges\.new\sproducts\.htm$ /WebChanges.newproducts.html? permanent;
+rewrite ^/weber\scarbs\.htm$ /webercarbs.html? permanent;
+rewrite ^/weber\scarbs_files/editdata\.mso$ /webercarbs_files/editdata.html? permanent;
+rewrite ^/WEBER\sLIST\.htm$ /WEBERLIST.html? permanent;
+rewrite ^/WEBER\sLIST_files/20LIST\.htm$ /WEBERLIST_files/20LIST.html? permanent;
+rewrite ^/WEBER\sLIST_files/editdata\.mso$ /WEBERLIST_files/editdata.html? permanent;
+rewrite ^/WEBER\sLIST_files/oledata\.mso$ /WEBERLIST_files/oledata.html? permanent;
+rewrite ^/WEBER\sLIST_files/productline\.htm$ /WEBERLIST_files/productline.html? permanent;
+rewrite ^/WEBER\sLIST_files/sheet001\.htm$ /WEBERLIST_files/sheet001.html? permanent;
+rewrite ^/WEBER\sLIST_files/sheet002\.htm$ /WEBERLIST_files/sheet002.html? permanent;
+rewrite ^/WEBER\sLIST_files/sheet003\.htm$ /WEBERLIST_files/sheet003.html? permanent;
+rewrite ^/WEBER\sLIST_files/sheet004\.htm$ /WEBERLIST_files/sheet004.html? permanent;
+rewrite ^/WEBER\sLIST_files/sheet005\.htm$ /WEBERLIST_files/sheet005.html? permanent;
+rewrite ^/WEBER\sLIST_files/tabstrip\.htm$ /WEBERLIST_files/tabstrip.html? permanent;
+rewrite ^/weber\+carbs\.htm$ /weber-carbs.html? permanent;
+rewrite ^/webpages/ProductLine/ProductLineMakers/B&M\.htm$ /webpages/ProductLine/ProductLineMakers/B-M.html? permanent;
+rewrite ^/What\sto\sorder\.htm$ /Whattoorder.html? permanent;
+rewrite ^/What\+to\+order\.htm$ /What-to-order.html? permanent;
+
+# Redirect all extensions to html
+if ($is_args = ''){
+	rewrite ^([^.]*)\.shtml$ $1.html permanent;
+	rewrite ^([^.]*)\.phtml$ $1.html permanent;
+	rewrite ^([^.]*)\.jhtml$ $1.html permanent;
+	rewrite ^([^.]*)\.htm$ $1.html permanent;
+	rewrite ^([^.]*)\.php$ $1.html permanent;
+	rewrite ^([^.]*)\.aspx$ $1.html permanent;
+	rewrite ^([^.]*)\.asp$ $1.html permanent;
+	rewrite ^([^.]*)\.jsp$ $1.html permanent;
+	rewrite ^([^.]*)\.apk$ $1.html permanent;
+}
+# End: Redirect all extensions to html
